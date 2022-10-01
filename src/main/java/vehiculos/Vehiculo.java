@@ -29,8 +29,9 @@ public class Vehiculo {
 		this.traccion = traccion;
 		this.fabricante = fabricante;
 		Vehiculo.CantidadVehiculos ++;
+		fabricantes.add(fabricante);
 		this.fabricante.getPais().aumentarCreados();
-		this.fabricante.aumentarVentas();
+		this.fabricante.aumentarVentas();	
 	}
 	
 	//metodos get
