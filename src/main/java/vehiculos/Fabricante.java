@@ -44,7 +44,7 @@ public class Fabricante {
 		this.cantidadVentas ++;
 	}
 	
-	public Fabricante fabricaMayorVentas() {
+	public static Fabricante fabricaMayorVentas() {
 		return(Vehiculo.fabricaMayorVentas());
 	}
 }

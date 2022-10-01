@@ -34,7 +34,7 @@ public class Pais {
 		this.cantidadCreados ++;
 	}
 	
-	public Pais paisMasVendedor() {
+	public static Pais paisMasVendedor() {
 		return(Vehiculo.paisMasVendedor());
 	}
 }
