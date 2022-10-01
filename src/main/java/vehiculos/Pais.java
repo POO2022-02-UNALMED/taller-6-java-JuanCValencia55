@@ -1,15 +1,15 @@
 package vehiculos;
 
-public class País {
+public class Pais {
 	private String nombre;
 	private int cantidadCreados;
 	
 	//Constructor
-	public País() {
+	public Pais() {
 		
 	}
 	
-	public País(String nombre) {
+	public Pais(String nombre) {
 		this.nombre = nombre;
 	}
 	//Metodos get y set

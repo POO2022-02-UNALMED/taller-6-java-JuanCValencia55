@@ -2,7 +2,7 @@ package vehiculos;
 
 import java.util.ArrayList;
 
-public class Vehículo {
+public class Vehiculo {
 	private String placa;
 	private int puertas;
 	private int velocidadMaxima;
@@ -15,11 +15,11 @@ public class Vehículo {
 	private static ArrayList<Fabricante> fabricantes = new ArrayList<Fabricante>();
 	
 	//Constructores
-	public Vehículo() {
-		Vehículo.CantidadVehiculos ++;
+	public Vehiculo() {
+		Vehiculo.CantidadVehiculos ++;
 	}
 	
-	public Vehículo(String placa, int puertas, int velocidadMaxima, String nombre, int precio, int peso, String traccion, Fabricante fabricante) {
+	public Vehiculo(String placa, int puertas, int velocidadMaxima, String nombre, int precio, int peso, String traccion, Fabricante fabricante) {
 		this.placa = placa;
 		this.puertas = puertas;
 		this.velocidadMaxima = velocidadMaxima;
@@ -28,7 +28,7 @@ public class Vehículo {
 		this.peso = peso;
 		this.traccion = traccion;
 		this.fabricante = fabricante;
-		Vehículo.CantidadVehiculos ++;
+		Vehiculo.CantidadVehiculos ++;
 		this.fabricante.getPais().aumentarCreados();
 		this.fabricante.aumentarVentas();
 	}
@@ -67,7 +67,7 @@ public class Vehículo {
 	}
 	
 	public static int getCantidadVehiculos() {
-		return(Vehículo.CantidadVehiculos);
+		return(Vehiculo.CantidadVehiculos);
 	}
 	
 	//metodos set
@@ -104,15 +104,15 @@ public class Vehículo {
 	}
 	
 	public static void setCantidadVehiculos(int cantidadVehiculos) {
-		Vehículo.CantidadVehiculos = cantidadVehiculos;
+		Vehiculo.CantidadVehiculos = cantidadVehiculos;
 	}
 	
 	//metodos de la clase
 	public static String vehiculosPorTipo() {
-		return ("Automoviles: " + String.valueOf(Automóvil.getCantidadAutomovil()) + "\n" + "Camionetas: " + String.valueOf(Camioneta.getCantidadCamionetas()) + "\n" + "Camiones: " + String.valueOf(Camion.getCantidadCamion()));
+		return ("Automoviles: " + String.valueOf(Automovil.getCantidadAutomovil()) + "\n" + "Camionetas: " + String.valueOf(Camioneta.getCantidadCamionetas()) + "\n" + "Camiones: " + String.valueOf(Camion.getCantidadCamion()));
 	}
 	
-	public static País paisMasVendedor() {
+	public static Pais paisMasVendedor() {
 		int max = 0;
 		int maxIndice = 0;
 		for (int i = 0; i < fabricantes.size(); i++) {

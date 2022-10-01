@@ -2,7 +2,7 @@ package vehiculos;
 
 public class Fabricante {
 	private String nombre;
-	private País pais;
+	private Pais pais;
 	private int cantidadVentas;
 	
 	//Constructores
@@ -10,7 +10,7 @@ public class Fabricante {
 		
 	}
 	
-	public Fabricante(String nombre, País pais) {
+	public Fabricante(String nombre, Pais pais) {
 		this.nombre = nombre;
 		this.pais = pais;
 	}
@@ -19,7 +19,7 @@ public class Fabricante {
 		return(this.nombre);
 	}
 	
-	public País getPais() {
+	public Pais getPais() {
 		return(this.pais);
 	}
 	
@@ -27,7 +27,7 @@ public class Fabricante {
 		return(this.cantidadVentas);
 	}
 	//Metodos set
-	public void setPais(País pais) {
+	public void setPais(Pais pais) {
 		this.pais = pais;
 	}
 	

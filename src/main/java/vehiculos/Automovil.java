@@ -1,15 +1,15 @@
 package vehiculos;
 
-public class Automóvil extends Vehículo {
+public class Automovil extends Vehiculo {
 	private int puestos;
 	private static int CantidadAutomovil;
 	
 	//constructores
-	public Automóvil() {
+	public Automovil() {
 		super();
 	}
 	
-	public Automóvil(String placa, String nombre, int precio, int peso, Fabricante fabricante, int puestos) {
+	public Automovil(String placa, String nombre, int precio, int peso, Fabricante fabricante, int puestos) {
 		super(placa, 4, 100, nombre, precio, peso, "FWD", fabricante);
 		this.puestos = puestos;
 	}
@@ -20,7 +20,7 @@ public class Automóvil extends Vehículo {
 	}
 	
 	public static int getCantidadAutomovil() {
-		return(Automóvil.CantidadAutomovil);
+		return(Automovil.CantidadAutomovil);
 	}
 	
 	public void setPuestos(int puestos) {
@@ -28,6 +28,6 @@ public class Automóvil extends Vehículo {
 	}
 	
 	public static void setCantidadAutomovil(int cantidadAutomovil) {
-		Automóvil.CantidadAutomovil = cantidadAutomovil;
+		Automovil.CantidadAutomovil = cantidadAutomovil;
 	}
 }
