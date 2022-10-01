@@ -43,4 +43,8 @@ public class Fabricante {
 	public void aumentarVentas() {
 		this.cantidadVentas ++;
 	}
+	
+	public Fabricante fabricaMayorVentas() {
+		return(Vehiculo.fabricaMayorVentas());
+	}
 }

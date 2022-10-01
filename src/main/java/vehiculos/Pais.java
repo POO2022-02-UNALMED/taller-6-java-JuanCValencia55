@@ -33,4 +33,8 @@ public class Pais {
 	public void aumentarCreados() {
 		this.cantidadCreados ++;
 	}
+	
+	public Pais paisMasVendedor() {
+		return(Vehiculo.paisMasVendedor());
+	}
 }
